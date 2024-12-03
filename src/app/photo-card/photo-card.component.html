@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="photo-card" [ngClass]="{ liked: isLiked }">
+    <h1>{{ photoCard.title | uppercase }}</h1>
+    <!-- <h2>{{ 756842675.876325 | number : "1.0-2" }}</h2> -->
+    <!-- <h2>{{ 0.25508 | percent : "1.0-1" }}</h2> -->
+    <h3>{{ 799.99 | currency : "EUR" : "code" }}</h3>
+    @if (photoCard.location) {
+    <p>
+      <strong>{{ this.photoCard.location }}</strong>
+    </p>
+    }
+    <img [src]="photoCard.imageUrl" [alt]="photoCard.title" />
+    <p>{{ photoCard.description }}</p>
+    <p>
+      Photo prise le {{ photoCard.create_at | date : "dd MMMM yyyy à HH:mm" }}
+    </p>
+    <p>
+      <button (click)="onAddLike()">{{ textLikeButton }}</button>
+      :
+      <span [ngStyle]="{ color: 'rgb(0,' + photoCard.like + ',0)' }">{{
+        photoCard.like
+      }}</span>
+    </p>
+  </div>
+</div>
