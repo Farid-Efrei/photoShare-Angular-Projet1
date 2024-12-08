@@ -1,5 +1,8 @@
 # PhotoShare
 
+Application FRONT en Angular (avec SCSS, Router) de photos avec navigation de pages et notions d'Angular (routing, pipes, ngfor, ngif, ngModule, NgClass)...
+Sur le thème de Spy X Family ^^
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
 
 ## Development server
