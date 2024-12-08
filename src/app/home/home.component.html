@@ -1,6 +1,12 @@
 <div class="home-block">
   <img src="img/home.png" alt="Logo Photo" />
   <div class="home-links">
+    <!-- on peut remplacer le routerlink par un bouton pour utiliser une fonction et le constructor pour aller vers photos = 2e méthode pour le routing un par des routerlink, l'autre par une fonction comme sur ce bouton plus bas avec onContinue()
+
+    1ere méthode avec routerlink:
     <a routerLink="photos">Continuer vers les Photos</a>
+    
+    2e méthode avec la fonction et le constructor dans le ts-->
+    <button (click)="onContinue()">Continuer vers les Photos</button>
   </div>
 </div>

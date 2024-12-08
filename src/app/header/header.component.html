@@ -1,3 +1,13 @@
 <header>
   <h1>PHOTO SHARE</h1>
+  <nav>
+    <a
+      routerLink=""
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >HOME</a
+    >
+    <!--routerLinkActiveOptions uniquement au niveau de la route parente "" pour ne pas la marquer comme active lorsque les autres pages sont affichés. -->
+    <a routerLink="photos" routerLinkActive="active">PHOTOS</a>
+  </nav>
 </header>
